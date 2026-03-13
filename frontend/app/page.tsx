@@ -9,6 +9,7 @@ export default function HomePage() {
           <Link href="/dashboard">Creator Dashboard</Link>
           <Link href="/community">Community Page</Link>
           <Link href="/analytics">Analytics</Link>
+          <Link href="/login">Login</Link>
         </nav>
       </header>
 

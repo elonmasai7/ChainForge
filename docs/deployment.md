@@ -10,6 +10,12 @@
 7. Analytics service: `http://localhost:8004/health`
 8. Realtime stream: `http://localhost:8004/revenue/stream?platform_id=demo-platform`
 
+## OAuth + Wallet Setup
+- Set `OAUTH_GOOGLE_CLIENT_ID`, `OAUTH_GOOGLE_CLIENT_SECRET`
+- Set `OAUTH_TWITTER_CLIENT_ID`, `OAUTH_TWITTER_CLIENT_SECRET`
+- Set `OAUTH_REDIRECT_BASE` to `http://localhost:8001`
+- Set `NEXT_PUBLIC_PRIVY_APP_ID` for Initia wallet creation
+
 ## Initia Appchain Integration
 1. Deploy Move modules in `contracts/` to the CreatorChain appchain.
 2. Update `INITIA_RPC_URL` and `INITIA_CHAIN_ID` in `.env`.

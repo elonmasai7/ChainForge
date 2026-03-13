@@ -41,3 +41,24 @@ CREATE TABLE IF NOT EXISTS events (
   payload JSONB NOT NULL,
   created_at TIMESTAMP DEFAULT NOW()
 );
+
+CREATE TABLE IF NOT EXISTS users (
+  id UUID PRIMARY KEY,
+  email TEXT,
+  name TEXT,
+  avatar_url TEXT,
+  wallet_address TEXT,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS oauth_accounts (
+  id UUID PRIMARY KEY,
+  user_id UUID REFERENCES users(id),
+  provider TEXT NOT NULL,
+  provider_user_id TEXT NOT NULL,
+  access_token TEXT,
+  refresh_token TEXT,
+  expires_at TIMESTAMP,
+  created_at TIMESTAMP DEFAULT NOW(),
+  UNIQUE (provider, provider_user_id)
+);
