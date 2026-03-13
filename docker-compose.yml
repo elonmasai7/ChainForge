@@ -25,7 +25,8 @@ services:
 
   auth-service:
     build:
-      context: backend/services/auth-service
+      context: backend
+      dockerfile: services/auth-service/Dockerfile
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
@@ -51,7 +52,8 @@ services:
 
   creator-service:
     build:
-      context: backend/services/creator-service
+      context: backend
+      dockerfile: services/creator-service/Dockerfile
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
@@ -65,7 +67,8 @@ services:
 
   payment-service:
     build:
-      context: backend/services/payment-service
+      context: backend
+      dockerfile: services/payment-service/Dockerfile
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
@@ -85,7 +88,8 @@ services:
 
   analytics-service:
     build:
-      context: backend/services/analytics-service
+      context: backend
+      dockerfile: services/analytics-service/Dockerfile
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
@@ -99,7 +103,8 @@ services:
 
   indexer:
     build:
-      context: backend/services/indexer
+      context: backend
+      dockerfile: services/indexer/Dockerfile
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
