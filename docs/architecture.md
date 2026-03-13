@@ -1,4 +1,4 @@
-# CreatorChain Architecture
+# ChainForge Architecture
 
 ## System Diagram
 ```mermaid

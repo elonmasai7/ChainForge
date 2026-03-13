@@ -4,12 +4,13 @@ export default function HomePage() {
   return (
     <main className="min-h-screen px-8 py-12">
       <header className="flex items-center justify-between">
-        <div className="text-2xl font-semibold">CreatorChain</div>
-        <nav className="flex gap-6 text-sm">
+        <div className="text-2xl font-semibold">ChainForge</div>
+        <nav className="flex gap-6 text-sm items-center">
           <Link href="/dashboard">Creator Dashboard</Link>
           <Link href="/community">Community Page</Link>
           <Link href="/analytics">Analytics</Link>
           <Link href="/login">Login</Link>
+          <Link className="badge" href="/dashboard/public">Public Preview</Link>
         </nav>
       </header>
 
@@ -20,7 +21,7 @@ export default function HomePage() {
             Launch a revenue engine for your community in minutes.
           </h1>
           <p className="mt-6 text-lg text-black/70">
-            CreatorChain spins up mini-platforms with subscriptions, micropayments,
+            ChainForge spins up mini-platforms with subscriptions, micropayments,
             paid AI tools, and cross-ecosystem onboarding powered by Initia.
           </p>
           <div className="mt-8 flex gap-4">

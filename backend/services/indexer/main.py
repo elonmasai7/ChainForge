@@ -8,7 +8,7 @@ import json
 import os
 import httpx
 
-app = FastAPI(title="CreatorChain Indexer")
+app = FastAPI(title="ChainForge Indexer")
 INITIA_RPC_URL = os.getenv("INITIA_RPC_URL", "http://localhost:26657")
 INITIA_TX_SEARCH_QUERY = os.getenv("INITIA_TX_SEARCH_QUERY", "")
 

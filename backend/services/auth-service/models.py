@@ -5,6 +5,7 @@ from shared.db import Base
 class User(Base):
     __tablename__ = "users"
     id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    privy_did = Column(String, nullable=True)
     email = Column(String, nullable=True)
     name = Column(String, nullable=True)
     avatar_url = Column(String, nullable=True)

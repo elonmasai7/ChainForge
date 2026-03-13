@@ -2,7 +2,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata = {
-  title: "CreatorChain",
+  title: "ChainForge",
   description: "Initia-powered monetization platform for creators"
 };
 

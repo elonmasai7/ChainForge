@@ -17,7 +17,7 @@
 - Set `NEXT_PUBLIC_PRIVY_APP_ID` for Initia wallet creation
 
 ## Initia Appchain Integration
-1. Deploy Move modules in `contracts/` to the CreatorChain appchain.
+1. Deploy Move modules in `contracts/` to the ChainForge appchain.
 2. Update `INITIA_RPC_URL` and `INITIA_CHAIN_ID` in `.env`.
 3. Set `INITIA_CLI_COMMAND` to a valid Initia CLI broadcast command that returns JSON with `txhash`.
 4. Configure indexer with `INITIA_TX_SEARCH_QUERY` to pull recent on-chain events.

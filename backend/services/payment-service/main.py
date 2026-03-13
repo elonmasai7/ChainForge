@@ -5,7 +5,7 @@ from shared.db import Base, engine, get_db
 from .models import Subscription, Payment
 from .rpc import InitiaRPCClient
 
-app = FastAPI(title="CreatorChain Payment Service")
+app = FastAPI(title="ChainForge Payment Service")
 Base.metadata.create_all(bind=engine)
 rpc = InitiaRPCClient()
 

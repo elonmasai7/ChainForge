@@ -44,6 +44,7 @@ CREATE TABLE IF NOT EXISTS events (
 
 CREATE TABLE IF NOT EXISTS users (
   id UUID PRIMARY KEY,
+  privy_did TEXT,
   email TEXT,
   name TEXT,
   avatar_url TEXT,

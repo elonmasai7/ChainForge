@@ -1,6 +1,6 @@
-# CreatorChain (Initia Appchain)
+# ChainForge (Initia Appchain)
 
-CreatorChain is a production-grade monetization platform for creators and communities built on the Initia stack. It enables creators to launch revenue-generating mini-platforms in minutes while keeping fees low and routing all value to creator vaults.
+ChainForge is a production-grade monetization platform for creators and communities built on the Initia stack. It enables creators to launch revenue-generating mini-platforms in minutes while keeping fees low and routing all value to creator vaults.
 
 **Highlights**
 - Appchain-based monetization primitives (subscriptions, micro-payments, pay-per-content, tipping, marketplace fees)

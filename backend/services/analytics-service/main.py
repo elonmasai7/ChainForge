@@ -6,7 +6,7 @@ import asyncio
 from fastapi.responses import StreamingResponse
 import json
 
-app = FastAPI(title="CreatorChain Analytics Service")
+app = FastAPI(title="ChainForge Analytics Service")
 
 @app.get("/health")
 def health():

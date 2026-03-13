@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from shared.db import Base, engine, get_db
 from .models import Creator, Platform
 
-app = FastAPI(title="CreatorChain Creator Service")
+app = FastAPI(title="ChainForge Creator Service")
 Base.metadata.create_all(bind=engine)
 
 class CreatorIn(BaseModel):

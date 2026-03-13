@@ -1,7 +1,10 @@
 export default function DashboardPage() {
   return (
     <main className="min-h-screen px-8 py-12">
-      <h1 className="text-4xl font-semibold">Creator Dashboard</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-4xl font-semibold">Creator Dashboard</h1>
+        <a className="badge" href="/dashboard/public">Public Preview</a>
+      </div>
       <section className="mt-8 grid gap-6 lg:grid-cols-3">
         <div className="card p-6">
           <div className="text-sm text-black/50">Revenue Today</div>
